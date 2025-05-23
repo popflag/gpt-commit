@@ -59,11 +59,11 @@
 (defvar gpt-commit-model-name "gpt-3.5-turbo"
   "Model name to use for GPT chat completions.")
 
-(defconst gpt-commit-api-url "https://api.openai.com/v1/chat/completions"
+(defvar gpt-commit-api-url "https://api.openai.com/v1/chat/completions"
   "API endpoint for GPT chat completions.")
 
 
-(defconst gpt-commit-system-prompt-en
+(defvar gpt-commit-system-prompt-en
   "The user provides the result of running `git diff --cached`. You suggest a conventional commit message. Don't add anything else to the response. The following describes conventional commits.
 
 # Conventional Commits 1.0.0
