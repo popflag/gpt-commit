@@ -126,7 +126,7 @@ A scope may be provided to a commit's type, to provide additional contextual inf
              :headers headers
              :data payload
              :parser 'json-read
-             :timeout 10
+             :timeout 60
              :success
              (cl-function
               (lambda (&key data &allow-other-keys)
